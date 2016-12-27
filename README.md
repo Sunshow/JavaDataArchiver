@@ -24,3 +24,37 @@
 - 日志类数据（不可变）
 
 ## 生命周期
+
+## 快速开始
+
+### 配置数据源
+
+在 **conf/datasource** 目录下添加 **sample_src.properties**
+
+    datasource.jdbc.driverClassName=com.mysql.jdbc.Driver
+    datasource.jdbc.url=jdbc:mysql://localhost:3306/db_sample_src?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&autoReconnectForPools=true&zeroDateTimeBehavior=convertToNull
+    datasource.jdbc.username=sample
+    datasource.jdbc.password=sample
+    datasource.jdbc.maxActive=10
+    datasource.jdbc.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+
+在 **conf/datasource** 目录下添加 **sample_des.properties**
+
+    datasource.jdbc.driverClassName=com.mysql.jdbc.Driver
+    datasource.jdbc.url=jdbc:mysql://localhost:3306/db_sample_des?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&autoReconnectForPools=true&zeroDateTimeBehavior=convertToNull
+    datasource.jdbc.username=sample
+    datasource.jdbc.password=sample
+    datasource.jdbc.maxActive=10
+    datasource.jdbc.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+
+### 配置归档任务
+
+在 **conf/archiver** 目录下添加 **sample.properties**
+
+    archiver.scanner.interval=1000
+    archiver.src.datasource=sample_src
+    archiver.des.datasource=sample_des
+    archiver.src.table.name=sample_table_src
+    archiver.des.table.name=sample_table_des
+
+### 启动服务
