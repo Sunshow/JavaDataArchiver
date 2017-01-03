@@ -29,7 +29,7 @@
 
 * 检验(validate)
 
-* 处理源数据(process-sources)
+* 处理源数据(process-source)
 
 * 转换(convert)
 
