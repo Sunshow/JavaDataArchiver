@@ -25,6 +25,18 @@
 
 ## 生命周期
 
+* 初始化(initialize)
+
+* 检验(validate)
+
+* 处理源数据(process-sources)
+
+* 转换(convert)
+
+* 处理目标数据(process-destination)
+
+* 验证(verify)
+
 ## 快速开始
 
 ### 配置数据源
