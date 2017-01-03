@@ -23,19 +23,19 @@
 - 订单类数据（完成后的订单在一段时间后不再可变）
 - 日志类数据（不可变）
 
-## 生命周期
+## 生命周期(lifecycle)
 
 * 初始化(initialize)
 
-* 检验(validate)
+* 读取源数据(read)
 
-* 处理源数据(process-source)
+* 拼装源数据(assemble)
 
 * 转换(convert)
 
-* 处理目标数据(process-destination)
+* 处理目标数据(process)
 
-* 验证(verify)
+* 完成(finalize)
 
 ## 快速开始
 
