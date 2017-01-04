@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>data-archiver-core</module>
+        <module>data-archiver-boot</module>
     </modules>
 
     <properties>

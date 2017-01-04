@@ -1,6 +1,6 @@
-package life.thr.data.core.lifecycle;
+package life.thr.data.archiver.core.lifecycle;
 
-import life.thr.data.core.exception.DataArchiverException;
+import life.thr.data.archiver.core.exception.DataArchiverException;
 
 /**
  * 数据归档生命周期接口

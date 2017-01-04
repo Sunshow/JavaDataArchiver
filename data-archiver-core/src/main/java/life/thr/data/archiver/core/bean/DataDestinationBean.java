@@ -1,4 +1,4 @@
-package life.thr.data.core.bean;
+package life.thr.data.archiver.core.bean;
 
 import java.io.Serializable;
 

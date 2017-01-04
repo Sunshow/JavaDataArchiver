@@ -1,4 +1,4 @@
-package life.thr.data.core.exception;
+package life.thr.data.archiver.core.exception;
 
 /**
  * 统一异常, 其他自定义异常均继承
