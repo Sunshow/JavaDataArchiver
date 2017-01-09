@@ -1,5 +1,35 @@
 # JavaDataArchiver
 
+## Goal
+
+In most of production scenario, data is growing infinitely as time goes by, 
+which may cause DB performance drops dramatically. 
+However massive cold data are barely used, this is the reason JavaDataArchiver came for.
+
+JavaDataArchiver project is designed to archive data, it offers two modes to achieve this goal: 
+ 1. Plug&play: A standalone running server with simple configuration.
+ 2. Built-in SDK: A more flexible way to built in your Java project
+ 
+## Feature List
+
+- Input:
+  - Mysql
+- Output:
+  - Mysql
+  - File
+- Support SSH tunnel to connect internal DB
+- Self-define datasource and archive configuration
+- Selective DB/Table/Column to archive
+- Customized cold data definition
+
+
+## TO-DO
+- Postgresql input/output support
+- Oracle input/output support
+- Amazon S3 output support
+- Aliyun OSS output support
+- GUI configuration
+
 ## 目标
 
 构建一个通用的数据归档中间件
